@@ -11,7 +11,7 @@ const [color, setColor] = useState({
     }
 
     const onValide = (e) => {
-        if (e.target.value.length === 7) {
+        if (e.target.value.length >= 7) {
             setColor(prev => ({rgb: valid(e.target.value) || 'Ошибка!'}))    
         } else {
             setColor(prev => ({rgb: ''}))
