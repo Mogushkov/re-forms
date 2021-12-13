@@ -1,30 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(234, 234, 241, 0.87);
-  
+.Converter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #33495f;
 }
 
-.field {
-  display: block;
+.Converter__input , .Converter__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
-  padding: 10px 5px;
-  text-align: center;
-  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.output {
-  background-color: rgba(26, 26, 29, 0.678);
-  margin-top: 5px;
-  color: white;
+.Converter__input {
+  text-align: center;
+}
+
+.Converter__result {
+  background-color: #00000044;
+  color: #ffffff;
 }
